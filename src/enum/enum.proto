@@ -1,0 +1,21 @@
+syntax = 'proto3';
+
+package example.enumeration;
+
+option go_package = 'enumpb';
+
+message EnumMessage {
+    int32 id = 1;
+    DayName day_name = 2;
+}
+
+enum DayName {
+    UNKNOWN = 0;
+    SUNDAY = 1;
+    MONDAY = 2;
+    TUESDAY = 3;
+    WEDNESDAY = 4;
+    THURSDAY = 5;
+    FRIDAY = 6;
+    SATURDAY = 7;
+}
